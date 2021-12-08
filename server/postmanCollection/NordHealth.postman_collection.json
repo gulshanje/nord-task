@@ -1,0 +1,455 @@
+{
+	"info": {
+		"_postman_id": "bbc7f5ee-5871-47e7-82d0-06ee3865aa61",
+		"name": "NordHealth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add new product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/api/v1/products/create/",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"create",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Add new product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "pm201",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Test pm 201",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test pm des 201",
+									"type": "text"
+								},
+								{
+									"key": "price ",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Gulshan/Pictures/test.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/api/v1/products/create/",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"create",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 06 Dec 2021 22:57:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "161"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 15,\n    \"code\": \"pm201\",\n    \"name\": \"Test pm 201\",\n    \"price\": 200,\n    \"description\": \"Test pm des 201\",\n    \"image\": \"http://localhost:8000/media/uploads/products/test_l6fFlS1.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update product details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "PM201",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "product from pm 201",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description 2",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Gulshan/Pictures/test.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseurl}}/api/v1/products/update/1/",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"update",
+						"1",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Update product details",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "PM201",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "product from pm 201",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test description 2",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Gulshan/Pictures/test.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/api/v1/products/update/1/",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"update",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 06 Dec 2021 23:03:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, PATCH, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "171"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"code\": \"PM201\",\n    \"name\": \"product from pm 201\",\n    \"price\": 200,\n    \"description\": \"test description 2\",\n    \"image\": \"http://localhost:8000/media/uploads/products/test_FHqKoRZ.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/api/v1/products/delete/{{productId}}/",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"delete",
+						"{{productId}}",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Delete product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/products/7",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"7"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 Dec 2021 00:35:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product was deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get list of all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/api/v1/products",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Get list of all products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/v1/products",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 06 Dec 2021 22:56:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2520"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"code\": \"2002\",\n        \"name\": \"Test Product 2002\",\n        \"price\": 20,\n        \"description\": \"test description\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-5ca0753f-4f40-45c8-820f-b0fb30736d97.jpg\"\n    },\n    {\n        \"id\": 2,\n        \"code\": \"2003\",\n        \"name\": \"Product 2003\",\n        \"price\": 100,\n        \"description\": \"test description 2003\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-5ca0753f-4f40-45c8-820f-b0fb30736d97_vvgx4DO.jpg\"\n    },\n    {\n        \"id\": 3,\n        \"code\": \"2004\",\n        \"name\": \"Test 2004\",\n        \"price\": 250,\n        \"description\": \"test description 2004\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-3161de16-ba96-44e1-9758-b333158ca9e5.jpg\"\n    },\n    {\n        \"id\": 4,\n        \"code\": \"test\",\n        \"name\": \"1232\",\n        \"price\": 12,\n        \"description\": \"aerr\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-3161de16-ba96-44e1-9758-b333158ca9e5.jpg\"\n    },\n    {\n        \"id\": 5,\n        \"code\": \"2012\",\n        \"name\": \"Test pm 2012\",\n        \"price\": 200,\n        \"description\": \"Test pm des 2012\",\n        \"image\": \"http://localhost:8000/media/uploads/products/test.jpg\"\n    },\n    {\n        \"id\": 6,\n        \"code\": \"2022\",\n        \"name\": \"Test pm 2022\",\n        \"price\": 200,\n        \"description\": \"Test pm des 2022\",\n        \"image\": \"http://localhost:8000/media/uploads/products/test_pFUocG0.jpg\"\n    },\n    {\n        \"id\": 7,\n        \"code\": \"erwrwe\",\n        \"name\": \"32423\",\n        \"price\": 22,\n        \"description\": \"324234\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-3161de16-ba96-44e1-9758-b333158ca9e5_niG18Uo.jpg\"\n    },\n    {\n        \"id\": 8,\n        \"code\": \"test project\",\n        \"name\": \"2003\",\n        \"price\": 230,\n        \"description\": \"sfsdf\",\n        \"image\": \"http://localhost:8000/media/uploads/products/WhatsApp_Image_2021-11-04_at_07.53.34.jpeg\"\n    },\n    {\n        \"id\": 9,\n        \"code\": \"test re\",\n        \"name\": \"test23\",\n        \"price\": 20,\n        \"description\": \"testing purpose\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-3161de16-ba96-44e1-9758-b333158ca9e5_XmylYz3.jpg\"\n    },\n    {\n        \"id\": 10,\n        \"code\": \"YUVDVFQR\",\n        \"name\": \"Ameer Hamza\",\n        \"price\": 23,\n        \"description\": \"test\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-3161de16-ba96-44e1-9758-b333158ca9e5_wsbinDC.jpg\"\n    },\n    {\n        \"id\": 11,\n        \"code\": \"YUVDVFQRereRwr\",\n        \"name\": \"Ameer Hamza\",\n        \"price\": 23,\n        \"description\": \"test\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-3161de16-ba96-44e1-9758-b333158ca9e5_xJX8Vnv.jpg\"\n    },\n    {\n        \"id\": 12,\n        \"code\": \"YUVDVFQRereRwr\",\n        \"name\": \"Ameer Hamza\",\n        \"price\": 23,\n        \"description\": \"test\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-3161de16-ba96-44e1-9758-b333158ca9e5_2PEiT11.jpg\"\n    },\n    {\n        \"id\": 13,\n        \"code\": \"Work well\",\n        \"name\": \"test 2\",\n        \"price\": 29,\n        \"description\": \"tet\",\n        \"image\": \"http://localhost:8000/media/uploads/products/lataus.png\"\n    },\n    {\n        \"id\": 14,\n        \"code\": \"S393\",\n        \"name\": \"serfr\",\n        \"price\": 23,\n        \"description\": \"aeasfsd\",\n        \"image\": \"http://localhost:8000/media/uploads/products/UC-3161de16-ba96-44e1-9758-b333158ca9e5_xfW8Ly5.jpg\"\n    }\n]"
+				}
+			]
+		}
+	]
+}

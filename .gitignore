@@ -1,0 +1,9 @@
+/node
+/server/nhvenv
+AddProduct copy.js
+Cart copy.js
+List copy 2.js
+List copy.js
+.vscode/
+.env
+/server/db.sqlite3
