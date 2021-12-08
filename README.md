@@ -56,6 +56,8 @@ in browser open - http://127.0.0.1:8000/
 
 ## To run API documentation - swagger
 
+First run the server
 
+http://127.0.0.1:8000/swagger/
 
 
